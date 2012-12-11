@@ -1,0 +1,20 @@
+<div class="post">
+  <ul class="post">
+    <div class="post-heading">
+      <div class="post-title"><a class="post-subject" href="/blog/{{p.key().id()}}">{{p.subject}}</a></div>
+      
+    </div>
+
+    <ul>
+      
+      <div class="post-date">{{p.created.strftime("%b %d, %Y %H:%M:%S")}}</div>
+      <div class="post-content">{{p._render_text | safe}}</div>
+      
+      {% if p.created != p.last_modified %}
+      <br><br>
+      <div class="post-modified">[Last Modified: {{p.last_modified.strftime("%b %d, %Y %H:%M:%S")}}]</div>
+      {% endif %}
+    </ul>
+  </ul>
+
+</div>

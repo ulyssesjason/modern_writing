@@ -1,0 +1,19 @@
+{% extends "more_front.html" %}
+
+{% extends "base.html" %}
+
+{% block content %}
+	
+	<a href="/blog/newpost">writing a new one</a>
+	<br><br>
+	
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    <br><br>
+  {% endfor %}
+    <ul>
+    	<a class="comment" href="/blog/edit/{{p.key().id()}}">comment</a>
+
+    </ul>
+    <br><br>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div class="upper-menu">
+		<a class="newpost" href="/blog/newpost" title="Check A New Blog Out"><img class="icon" src="/img/java.png" alt></a>
+		<a class="cleanAll" href="/blog/clean" title="Removing All Blogs"><img class="icon" src="/img/fire_all.png" alt></a>
+		<a class="storage" href="/blog/storage" title="Going to Storage"><img class="icon" src="/img/stack.png" alt></a>
+	</div>
+	
+  {% for p in posts %}
+ 
+ 	<div class="front-post">  {{ p.part_render() | safe }}</div> 
+
+
+
+    
+
+  {% endfor %}
+
+{% endblock %}

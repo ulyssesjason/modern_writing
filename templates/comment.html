@@ -1,0 +1,15 @@
+
+  <ul class="comment">
+
+
+      
+      <div class="comment-heading">{{c.created.strftime("%b %d, %Y %H:%M:%S")}}|{{c.author|safe}}</div>
+      <div class="comment-content">{{c._render_text | safe}}</div>
+      
+      {% if c.created != c.last_modified %}
+      <br>
+      <div class="comment-modified">[Last Modified: {{c.last_modified.strftime("%b %d, %Y %H:%M:%S")}}]</div>
+      {% endif %}
+
+  </ul>
+

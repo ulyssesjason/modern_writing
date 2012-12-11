@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{post.render() | safe}}
+
+<div class="new-comment">  
+	<div id="add-comment">Add a Comment</div>
+		   	  
+	<form method="post"> 
+		   <div id="comment-form">
+		   	  Name: <input class="new-comment-author" type="text" name="author" value="{{author}}">
+		      <p><textarea class="new-comment-content" name="content">{{content}}</textarea></p>
+		      <div class="error">{{error}}</div>
+		   </div>
+		<div id="comment-submit"><input type="submit" value="Submit"></div>
+	</form>
+</div>
+  
+<br>
+  	<a class="comment" href="#add-comment" name="add-comment">add comment</a>
+	<a class="edit" href="/blog/edit/{{post.key().id()}}">edit</a>
+	<a class="remove" href="/blog/remove/{{post.key().id()}}">remove</a>
+
+  <ul>
+  <span id="comments">Comments:</span>
+  {% for c in post.comment %}
+  	{{c.render()|safe}}
+
+  {% endfor%}
+  </ul>
+
+
+
+
+{% endblock %}

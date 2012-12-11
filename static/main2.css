@@ -1,0 +1,349 @@
+body {
+
+    font-family: Georgia, serif;
+    font-size: 19px;
+    
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+    background: #102b6a;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+a.cleanAll{
+ 
+}
+
+a.read-more-hint{
+    color: white;
+    background-color: #CD853F;
+    padding:3px 5px;
+}
+a.read-more-hint:hover{
+    color: #CD853F;
+    background-color: #800000;
+    padding:3px 5px;
+}
+a.comment{
+
+    color: white;
+    background:silver;
+    margin-top: 10px;
+    padding:3px 5px;
+}
+a.comment:hover{
+    background: grey;
+}
+
+a.more{
+    color: white;
+    background:silver;
+    margin-top: 10px;
+    padding:3px 5px;
+}
+a.more:hover{
+    background: grey;
+}
+a.edit{
+    color: white;
+    background:silver;
+    margin-top: 10px;
+    padding:3px 5px;
+}
+a.edit:hover{
+    background: blue;
+}
+a.remove{
+    color: white;
+    background:silver;
+    margin-top: 10px;
+    padding:3px 5px;
+
+}
+a.remove:hover{
+    background: red;
+}
+a.restore{
+    color: white;
+    background:silver;
+    margin-top: 10px;
+    padding:3px 5px;
+}
+a.restore:hover{
+    background: navy;
+}
+a.post-subject{
+    color: navy;
+}
+
+.base-title {
+}
+ul.post{ 
+    background: white;
+    border: 2px solid #ccc;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+ }
+
+/*ul.post:hover{
+    background: #d3d7d4;
+}*/
+
+ul.single-post-content{
+    margin-right: 5%;
+}
+
+img.icon{
+    height: 25px;
+    width: 25px;
+    border: 1px solid ;
+    border-color: #F5F5F5;
+    padding: 3px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+img.icon:hover{
+    height: 25px;
+    width: 25px;
+    border: 1px solid ;
+    border-color: #ccc #555 #555 #ccc;
+    padding: 3px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+
+img.small-icon{
+    
+    height: 20px;
+    width: 20px;
+    border: 1px solid ;
+    border-color: white;
+    padding: 3px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+img.small-icon:hover{
+    
+    height: 20px;
+    width: 20px;
+    border: 1px solid ;
+    border-color: #ccc #555 #555 #ccc;
+    padding: 3px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.error {
+    color: red;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+label + label {
+    margin-top: 20px;
+}
+
+.post-subject-input {
+    width: 75%;
+    font-size: 24px;
+    padding: 2px;
+    font-family: monospace;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-content-input{
+  width: 75%;
+  height: 400px;
+  font-size: 16px;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.post + .post {
+    margin-top: 25px;
+}
+
+.post-heading {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+    margin-right: 5%;
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.post-date {
+
+    font-size: 0.8em;
+
+}
+
+.post-content {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+    
+}
+.post-modified{
+    color: brown;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.upper-menu{
+}
+
+.comment {
+     border: 1px solid #aaa; 
+     padding: 4px; 
+     margin-bottom: 12px; 
+ }
+
+
+.new-comment-author{
+    margin-left: 10px;
+    width: 40%;
+    border:1px solid;
+    border-color: #ccc;
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+/*.new-comment-author:hover{
+    width: 40%;
+    border:1px solid;
+    border-color:  #777 #ccc #ccc #777;
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}*/
+.new-comment-content{
+    margin-left: 10px;
+    width: 95%;
+    height: 100px;
+    border:1px solid;
+    border-color: #ccc ;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+/*.new-comment-content:hover{
+    width: 95%;
+    border:1px solid;
+    border-color:  #777 #ccc #ccc #777;
+    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}*/
+#add-comment { 
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #555;
+    
+}
+#comment-form {
+  height: 40%;
+  padding: 4px; 
+  padding-bottom: 0px; 
+}
+#comment-submit{
+    text-align: right;
+     margin-right: 50px; 
+    
+     margin-top: -5px;
+}
+
+.new-comment {
+    position:relative;
+    width: 45%;
+    background: #d9d6c3; 
+    padding: 3px 5px; 
+    border: 1px solid; 
+    border-color: #ddd;
+    -moz-border-radius:7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+
+.new-comment:after {
+    content:"";
+    position:absolute;
+    bottom:-10px; /* value = - border-top-width - border-bottom-width */
+    left:10px; /* controls horizontal position */
+    border-width:20px 15px 0; /* vary these values to change the angle of the vertex */
+    border-style:solid;
+    border-color:#d9d6c3 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+.comment-content{
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+.comment-heading{
+    font-size: 0.6em;
+    margin-bottom: 5px;
+    font-style: italic;
+
+}
+.comment-modified{
+    font-size: 0.6em;
+    margin-bottom: 5px;
+    color: red;
+}
+.foot{
+    margin-top: 0 auto;
+}
+.front-post{
+
+}
+

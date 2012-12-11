@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="upper-menu">
+
+		<a class="cleanAll" href="/blog/storage/clean" title="Removing All Blogs Thoroughly"><img class="icon" src="/img/fire_all.png" alt>
+		</a>
+
+	</div>
+	
+  {% for p in posts %}
+    {{ p.render() | safe }}
+    
+    <ul>
+    	<a class="restore" href="/blog/restore/{{p.key().id()}}">Restore</a>
+    </ul>
+    <br><br>
+  {% endfor %}
+
+{% endblock %}

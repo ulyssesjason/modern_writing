@@ -1,5 +1,6 @@
 import webapp2
 from blog import *
+from plugin import *
 
 rule = webapp2.WSGIApplication([('/', BlogFront),
                                ('/unit2/rot13', Rot13),
@@ -14,6 +15,7 @@ rule = webapp2.WSGIApplication([('/', BlogFront),
                                ('/blog/restore/([0-9]+)',RestorePost),
                                ('/blog/storage',PostStorage),
                                ('/blog/storage/clean',CleanStorage),
-                               ('/blog/edit/(.*)',EditPost)
+                               ('/blog/edit/(.*)',EditPost),
+                               ('/kpi',KPI_random),
                                ],
                               debug=True)

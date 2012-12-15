@@ -1,0 +1,21 @@
+{% extends "plugin_base.html" %}
+
+  {% block content %}
+
+    <h2>Enter target to get 5 random ones:</h2>
+    <form method="post">
+		<input type="target" name="target" value="{{target}}">
+      <br>
+     	<input type="submit">
+    </form>
+
+
+<table border="0.5">
+  <tr>
+  	{% for d in data %}
+  	<td>{{d}}</td>
+  	{% endfor%}
+  </tr>
+</table>
+
+{% endblock %}

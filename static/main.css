@@ -344,10 +344,16 @@ label + label {
     margin-bottom: 5px;
     color: red;
 }
-.foot{
-    margin-top: 0 auto;
+footer {
+    margin-bottom: 0 ;
+    width: 100%;
 }
 .front-post{
 
 }
 
+.wrapper {
+    width: 960px;
+    margin-bottom: 0; 
+    
+}

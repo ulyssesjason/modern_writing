@@ -3,9 +3,9 @@ from blog import *
 from plugin import *
 
 rule = webapp2.WSGIApplication([('/', BlogFront),
-                               ('/unit2/rot13', Rot13),
-                               ('/unit2/signup', Signup),
-                               ('/unit2/welcome', Welcome),
+                               ('/rot13', Rot13),
+                               ('/signup', Signup),
+                               ('/welcome', Welcome),
                                ('/blog/?', BlogFront),
                                ('/blog',BlogFront),
                                ('/blog/([0-9]+)', PostPage),

@@ -19,7 +19,15 @@ def randomAround(target,frequency):
 		random_set.append(int(target*random.uniform(0.9,1.1)))
 	return random_set	
 
-	
+def formatted(input):
+	input=input.strip()
+	if(input.isdigit()):
+		return input
+	else:
+		if(input.find(',') != -1):
+			input=input.replace(',','')#lot more to be promoted
+
+	return input
 
 class KPI_random(PluginHandler):
 	def get(self):
@@ -27,7 +35,7 @@ class KPI_random(PluginHandler):
 	def post(self):
 		target=self.request.get('target')
 		try:
-			target=int(target)
+			target=int(formatted(target))
 		except:
 			target=0
 		data=[]
